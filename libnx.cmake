@@ -1,6 +1,8 @@
 
 set(DEVKITPRO "/opt/devkitpro")
 set(NX 1)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
+include(SwitchTools_nx)
 
 set(CMAKE_SYSTEM_NAME "Generic")
 set(CMAKE_C_COMPILER "${DEVKITPRO}/devkitA64/bin/aarch64-none-elf-gcc")
