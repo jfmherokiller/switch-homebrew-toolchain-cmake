@@ -5,6 +5,8 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 include(SwitchTools_nx)
 
 set(CMAKE_SYSTEM_NAME "Generic")
+set(CMAKE_CXX_STANDARD 11)
+
 set(CMAKE_C_COMPILER "${DEVKITPRO}/devkitA64/bin/aarch64-none-elf-gcc")
 set(CMAKE_CXX_COMPILER "${DEVKITPRO}/devkitA64/bin/aarch64-none-elf-g++")
 set(CMAKE_AR "${DEVKITPRO}/devkitA64/bin/aarch64-none-elf-gcc-ar" CACHE STRING "")
@@ -25,4 +27,3 @@ set(CMAKE_EXE_LINKER_FLAGS_INIT "-specs=${DEVKITPRO}/libnx/switch.specs -march=a
 
 set(BUILD_SHARED_LIBS OFF CACHE INTERNAL "Shared libs not available")
 set(CMAKE_INSTALL_PREFIX ${DEVKITPRO}/portlibs/switch)
-
