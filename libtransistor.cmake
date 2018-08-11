@@ -8,6 +8,7 @@ set(CMAKE_SYSTEM_NAME "Switch")
 
 set(TRIPLE "aarch64-none-linux-gnu")
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_COMPILER "/usr/bin/clang")
 set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 set(CMAKE_C_COMPILER_TARGET "${TRIPLE}")
