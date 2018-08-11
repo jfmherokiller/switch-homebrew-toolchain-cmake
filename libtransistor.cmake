@@ -3,7 +3,7 @@ set(DEVKITPRO2 "/opt/libtransistor")
 set(NX 2)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
-
+include(SwitchTools_trn)
 set(CMAKE_SYSTEM_NAME "Switch")
 
 set(TRIPLE "aarch64-none-linux-gnu")
