@@ -18,3 +18,8 @@ A value of 1 means libnx.
 A value of 2 means libtransistor.
 
 Both toolchains have a add_nro_target function which uses that toolchains utilities to generate an nro from the compiled elf.
+
+#stuff you may need todo to get the toolchain to work under diffrent setups/platforms
+
+in libnx.cmake edit the line `set(DEVKITPRO "/opt/devkitpro")` to the location of your devkit pro install
+if using libtransistor edit the line `set(DEVKITPRO2 "/opt/libtransistor")` in libtransistor.cmake and replace it with the location where libtransistor is installed.
