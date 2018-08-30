@@ -1,6 +1,7 @@
 set(Python_ADDITIONAL_VERSIONS 3.4 3.5 3.6)
 find_package(PythonInterp 3 REQUIRED)
-set(CONVERTER "${LIBTRNSSTR}/tools/elf2nxo.py")
+
+set(CONVERTER "${LIBTRN}/tools/elf2nxo.py")
 
 function(add_nro_target target)
     get_filename_component(target_we ${target} NAME_WE)
