@@ -12,7 +12,6 @@ macro(msys_to_cmake_path MsysPath ResultingPath)
 	endif()
 endmacro()
 
-#if the above does not work replace it with the one below
 msys_to_cmake_path("$ENV{DEVKITPRO}" DEVKITPRO)
 
 set(NX 1)
