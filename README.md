@@ -9,19 +9,16 @@ I do not know if it will work with any setup so ill share my current setup so yo
 ![directory layout](https://i.imgur.com/OguGhpB.png?1 "how I have my directory layed out")
 
 
-Special notes: 
+Special notes:
 
-The toolchain files have it builtin where the projects can distiguish between libnx and libtransistor.
+The toolchain files have a variable (NX) to distiguish between libnx and libtransistor.
 
-Is its done by comparing the value of the NX variable.
+It's done by comparing the value of the NX variable:
 A value of 1 means libnx.
 A value of 2 means libtransistor.
 
-Both toolchains have a add_nro_target function which uses that toolchains utilities to generate an nro from the compiled elf.
+Both toolchains have a add_nro_target function which uses the toolchain utilities to generate an nro from the compiled elf.
 
 #stuff you may need todo to get the toolchain to work under diffrent setups/platforms
 
-in libnx.cmake edit the line `set(DEVKITPRO "/opt/devkitpro")` to the location of your devkit pro install
-
-if using libtransistor edit the line `set(LIBTRN "/opt/libtransistor")` in libtransistor.cmake and replace it with the location where libtransistor is installed.
-
+ If you have trouble with CLion and WSL use the commented lines at the top of the appropriate CMake toolchain file.
