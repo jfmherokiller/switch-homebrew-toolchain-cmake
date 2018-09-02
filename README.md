@@ -19,6 +19,6 @@ A value of 2 means libtransistor.
 
 Both toolchains have a add_nro_target function which uses the toolchain utilities to generate an nro from the compiled elf.
 
-#stuff you may need todo to get the toolchain to work under diffrent setups/platforms
+#stuff you may need todo to get the toolchain file to work under different setups/platforms
 
  If you have trouble with CLion and WSL use the commented lines at the top of the appropriate CMake toolchain file.
