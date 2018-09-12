@@ -36,7 +36,7 @@ set(CMAKE_C_FLAGS "${CPPFLAGS} -march=armv8-a -mtune=cortex-a57 -mtp=soft -fPIC 
 set(CMAKE_CXX_FLAGS "${CPPFLAGS} ${CMAKE_C_FLAGS} -fno-rtti -fno-exceptions -std=gnu++11" CACHE STRING "C++ flags")
 
 if(WITH_PORTLIBS)
-    set(CMAKE_FIND_ROOT_PATH ${DEVKITPRO}/devkitA64 ${DEVKITPRO} ${DEVKITPRO}/libnx ${DEVKITPRO}/portlibs/switch))
+    set(CMAKE_FIND_ROOT_PATH ${DEVKITPRO}/devkitA64 ${DEVKITPRO} ${DEVKITPRO}/libnx ${DEVKITPRO}/portlibs/switch)
 else()
     set(CMAKE_FIND_ROOT_PATH ${DEVKITPRO}/devkitA64 ${DEVKITPRO}/libnx ${DEVKITPRO})
 endif()
