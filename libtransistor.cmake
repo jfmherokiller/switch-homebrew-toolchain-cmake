@@ -1,3 +1,5 @@
+#set(DEVKITPRO '/opt/devkitpro')
+#set(LIBTRN '/opt/libtransistor')
 msys_to_cmake_path("$ENV{DEVKITPRO}" DEVKITPRO)
 msys_to_cmake_path("$ENV{LIBTRANSISTOR_HOME}" LIBTRN)
 set(NX 2)
